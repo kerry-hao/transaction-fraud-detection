@@ -1,0 +1,29 @@
+{
+  "status": "reference_output_only_not_reproduced",
+  "source_file": "eda-and-models.ipynb",
+  "source_sha256": "334b2b263e33b2b9ff626108929637d066730c0d0ff6904ef9c91716302b51b3",
+  "source_cell_indices_zero_based": {
+    "shape": 8,
+    "split_definition": 48,
+    "model_output": 49
+  },
+  "associated_public_reference": "https://www.kaggle.com/code/artgor/eda-and-models",
+  "merged_train_shape": [
+    590540,
+    434
+  ],
+  "merged_test_shape": [
+    506691,
+    433
+  ],
+  "best_fold_roc_auc": [
+    0.919435,
+    0.931982,
+    0.926607,
+    0.946655,
+    0.923309
+  ],
+  "printed_cv_mean": 0.9296,
+  "printed_cv_std": 0.0095,
+  "leaderboard_score_verified": false
+}

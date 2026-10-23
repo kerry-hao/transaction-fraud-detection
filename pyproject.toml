@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ieee-cis-fraud-learning"
+version = "0.1.0"
+description = "A chronological fraud detection learning pipeline with explicit experiment status"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.4,<1.9",
+  "lightgbm>=4.3,<5", "matplotlib>=3.8,<4", "joblib>=1.3,<2"
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab>=4,<5", "nbformat>=5.10,<6"]
+download = ["kaggle>=1.6,<3"]
+
+[project.scripts]
+fraud = "fraud_detection.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
